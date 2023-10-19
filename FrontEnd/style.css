@@ -1,0 +1,23 @@
+
+body header h1 {
+    color: gray !important;
+}
+
+/* selecionar pela tag */
+h1 {
+    color: rgb(46, 70, 97);
+    font-size: 60px;
+    
+}
+
+/* selecionar por id (use #) */
+#myImage {
+    width: 400px;
+    height: 300px;
+    
+}
+
+/* selecionar classe (use .) */
+.customArticle {
+    color: black;
+}

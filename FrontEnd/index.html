@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- define o documento como HTML -->
+<html lang="pt_br">
+
+<head> <!-- contém informações fundamentais para a página web-->
+    <meta charset="UTF-8"> <!-- encoding dos caracteres-->
+    <!-- indicar ao browser que este site pode ser acessado via mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- dá uma descrição básica do site exibição nas buscas-->
+    <meta name="description" content="primeiro site">
+    <title>Meu site</title>
+    <!-- importação do CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="color: palevioletred;">Últimas Notícias</h1>
+        <!--<button onclick="showMessage()">Clique</button>-->
+    </header>
+
+    <main>
+        <article class="customArticle">
+            <h3>Guerra em Israel</h3> <!-- título menor -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aliquam id deserunt asperiores error,
+                tempore voluptas delectus consequuntur earum, sequi repellat cupiditate, dolores totam unde quia quaerat
+                ratione at exercitationem?</p>
+            <p>Parágrafo 1</p> <!-- textos (pula linha) -->
+            <p>Parágrafo 2</p>
+            <span>span 1</span> <!-- texttos (não pula linha)-->
+            <span>span 2</span>
+
+            <!-- links tag a --> <!-- _blank, para abrir o link em outra aba -->
+            <p>
+                <strong> Entre no <a target="_blank" href="https://www.google.com.br">
+                        Google
+                </strong>
+                </a>
+            </p>
+            <br><!--pular linha-->
+            <hr> <!--linha-->
+        </article>
+
+        <article class="customArticle">
+            <h3>Como aproveitar as férias na França</h3>
+            <p>Viajar à França é imergir em um país de cultura forte e história marcante. A nação é uma potência há
+                séculos, conquistou territórios por todo o planeta, foi pioneira em diferentes áreas de interesse,
+                inclusive as artes, e carrega grandes ideais. É um país de grandes conquistas, mas também muitas
+                guerras, e tem suas páginas marcadas pela história de personalidades como Napoleão Bonaparte, Voltaire,
+                Descartes, Joana dArc e muitos outros.</p>
+                <p>Conheça a <abbr title="França">FR</abbr> </p>
+                <img id="myImage"
+                src="https://francabrasil.com.br/wp-content/uploads/sites/11/2015/02/paris-1024x682.jpg" 
+                    alt="Imagem da França">
+        </article>
+        
+        <article class="customArticle">
+            <h3>Cidades para visitar na França</h3>
+            <select>
+                <option value="">Torre Effiel</option>
+                <option value="">Museo do Louvre</option>
+            </select>
+            <ul>
+                <li>Paris </li>
+                <li>Perpignan</li>
+                <li>Chenonceau </li>
+            </ul>
+        </article>
+
+        <section>
+            <h4>Cadastre-se em nossa newslatter! ✉</h4 >
+            <form onsubmit="saveNewsletterUser(event)">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" maxlength="50" 
+                    placeholder="Nome Completo"
+                    required> <!-- deixar o campo obrigatório -->
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" maxlength="50"
+                    placeholder="Seu melhor e-mail"
+                    required>
+                </div>
+                <div>
+                    <button type="submit">Cadastrar!</button>
+                </div>
+            </form>
+            <br><br>
+        </section>
+
+        <footer>
+            <br><hr>
+            <p>Entre em contato conosco!</p>
+            <a href="mailto:daniel.franca@gmail.com">daniel.franca@gmail.com</a>
+            <br>
+            <a href="tel:+5519999999999">19-99999-9999</a>
+            <br>
+        </footer>
+
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
